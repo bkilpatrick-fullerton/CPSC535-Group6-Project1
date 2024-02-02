@@ -10,33 +10,33 @@
 - Project coordinator - Brandon
 
 ### Algo - Neema (and Asad?)
-- Version 1 Due Date: Saturday Feb 3rd
-- Module Name(s): (Neema/Asad: what module name should Mrunal be importing in her main gui code? )
-- Librarys needed: (Neema/Asad: what non-standard librarys will people need to instal to run this code. ex: matplotlib)
-- Funtion/Class Definitions: (Neema/Asad: what functions/classes should Mrunal be calling in her main gui code and what do they do?
-   - name of each funciton/class (ex: bubble_sort(arr)
-   - description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted Lis
-   - input (ex: param1 "arr" = a List of unsorted integer
-   - output (ex: a List of sorted integers)
+- **Version 1 Due Date:** Saturday Feb 3rd
+- **Module Name(s):** (Neema/Asad: what module name should Mrunal be importing in her main gui code? )
+- **Librarys needed:** (Neema/Asad: what non-standard librarys will people need to instal to run this code. ex: matplotlib)
+- **Funtion/Class Definitions:** (Neema/Asad: what functions/classes should Mrunal be calling in her main gui code and what do they do?
+   - **Name:** of each funciton/class (ex: bubble_sort(arr)
+   - **Description:** (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted Lis
+   - **Input:** (ex: param1 "arr" = a List of unsorted integer
+   - **Output:** (ex: a List of sorted integers)
 
 ### Visualizaion - Akshay
-- Version 1 Due Date: Saturday Feb 3rd
-- Module Name(s): (Akshay: what module name should Mrunal be importing in her main gui code?)
-- Librarys needed: (Akshay: what non-standard librarys will people need to instal to run this code. ex: matplotlib)
-- Funtion/Class Definitions: (Neema: what are the function or class definitions: 
-        * name of each funciton/class (ex: bubble_sort(arr)
-        *  description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
-        * input (ex: param1 "arr" = a List of unsorted integers)
-        * output (ex: a List of sorted integers)
+- **Version 1 Due Date:** Saturday Feb 3rd
+- **Module Name(s):** (Akshay: what module name should Mrunal be importing in her main gui code?)
+- **Librarys needed:** (Akshay: what non-standard librarys will people need to instal to run this code. ex: matplotlib)
+- **Funtion/Class Definitions:** (Neema: what are the function or class definitions:
+   - **Name:** of each funciton/class (ex: bubble_sort(arr)
+   - **Description:** (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
+   - **Input:** (ex: param1 "arr" = a List of unsorted integers)
+   - **Output:** (ex: a List of sorted integers)
 
 ### GUI - Mrunal
-- Version 1 Due Date: Saturday Feb 3rd
-- Module Name(s): (Mrunal)
-- Librarys needed: (Mrunal: what non-standard librarys will people need to instal to run this code. ex: tkinter or pillow)
-- Notes on using the Gui: (murnal) 
+- **Version 1 Due Date:** Saturday Feb 3rd
+- **Module Name(s):** (Mrunal)
+- **Librarys needed:** (Mrunal: what non-standard librarys will people need to instal to run this code. ex: tkinter or pillow)
+- **Notes on using the Gui:** (murnal) 
 
 ### Doumentation - Adam
-- Version 1 Due Date: Sunday Feb 4th
+- **Version 1 Due Date:** Sunday Feb 4th
 
 ##Tests Cases - Adam/Brandon/Others?
 - for Algos - This could be a Module with coded unit tests (ex code that calls each sorting algo function with a known array and compares that array to presorted array to verify proper sorting)
