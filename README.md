@@ -38,6 +38,6 @@
 ### Doumentation - Adam
 - **Version 1 Due Date:** Sunday Feb 4th
 
-##Tests Cases - Adam/Brandon/Others?
+### Tests Cases - Adam/Brandon/Others?
 - for Algos - This could be a Module with coded unit tests (ex code that calls each sorting algo function with a known array and compares that array to presorted array to verify proper sorting)
 - for GUi/Visualization - Mabye this is just a description of manual tests performed (data entered through gui, expected output and observed output - including edge cases (?) 
