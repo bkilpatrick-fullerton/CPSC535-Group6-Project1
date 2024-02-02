@@ -15,9 +15,9 @@
 - Librarys needed: (Neema/Asad: what non-standard librarys will people need to instal to run this code. ex: matplotlib)
 - Funtion/Class Definitions: (Neema/Asad: what functions/classes should Mrunal be calling in her main gui code and what do they do?: 
         1. name of each funciton/class (ex: bubble_sort(arr)
-        2.  description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
-        3. input (ex: param1 "arr" = a List of unsorted integers
-        4. output (ex: a List of sorted integers)
+        1. description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
+        1. input (ex: param1 "arr" = a List of unsorted integers
+        1. output (ex: a List of sorted integers)
 
 ### Visualizaion - Akshay
 - Version 1 Due Date: Saturday Feb 3rd
