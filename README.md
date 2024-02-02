@@ -14,20 +14,20 @@
 - Module Name(s): (Neema/Asad: what module name should Mrunal be importing in her main gui code? )
 - Librarys needed: (Neema/Asad: what non-standard librarys will people need to instal to run this code. ex: matplotlib)
 - Funtion/Class Definitions: (Neema/Asad: what functions/classes should Mrunal be calling in her main gui code and what do they do?: 
-        1. name of each funciton/class (ex: bubble_sort(arr)
-        1. description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
-        1. input (ex: param1 "arr" = a List of unsorted integers
-        1. output (ex: a List of sorted integers)
+        * name of each funciton/class (ex: bubble_sort(arr)
+        * description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
+        * input (ex: param1 "arr" = a List of unsorted integers
+        * output (ex: a List of sorted integers)
 
 ### Visualizaion - Akshay
 - Version 1 Due Date: Saturday Feb 3rd
 - Module Name(s): (Akshay: what module name should Mrunal be importing in her main gui code?)
 - Librarys needed: (Akshay: what non-standard librarys will people need to instal to run this code. ex: matplotlib)
 - Funtion/Class Definitions: (Neema: what are the function or class definitions: 
-        1. name of each funciton/class (ex: bubble_sort(arr)
-        2.  description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
-        3. input (ex: param1 "arr" = a List of unsorted integers)
-        4. output (ex: a List of sorted integers)
+        * name of each funciton/class (ex: bubble_sort(arr)
+        *  description (ex: sorts a List of unsorted integers using the Bubble Sort algo. Returns a new sorted List
+        * input (ex: param1 "arr" = a List of unsorted integers)
+        * output (ex: a List of sorted integers)
 
 ### GUI - Mrunal
 - Version 1 Due Date: Saturday Feb 3rd
