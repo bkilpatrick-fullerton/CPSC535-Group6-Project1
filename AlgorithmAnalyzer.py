@@ -1,9 +1,12 @@
 """ Algorithm Analyzer"""
 from tkinter import *
+from tkinter import ttk
 import random as rd
 import SortingAlgos as algos
 import GraphViz as viz
 import time
+import customtkinter
+from PIL import Image, ImageTk
 
 GEN_LIST_MIN = 50
 GEN_LIST_MAX = 50
@@ -116,34 +119,56 @@ generated_list = [] # holds or randomly generatee int list
 #create tkinter window
 root = Tk() #has to be first in a Tkinter file
 root.title("Algo Analyzer")
+root.minsize(1700, 1000)
+
+# configuring the grid
+root.grid_columnconfigure(1, weight=1)
+root.grid_columnconfigure((2, 3), weight=0)
+root.grid_rowconfigure((0, 1, 2), weight=1)
+
+
+background_image = ImageTk.PhotoImage(Image.open("bg.jpeg"))
+background_label = ttk.Label(root, image=background_image)
+background_label.place(relwidth=1, relheight=1)
+
+root.configure(bg='#2E2E2E')
+# Create a style for the input label
+style = ttk.Style()
+style.configure("InputLabel.TLabel", font=("Roboto", 14, "bold"))
+
+customtkinter.CTkLabel(root, text="Algorithms Efficiency Analyzer",font=("Roboto", 34, "bold"), fg_color="transparent", width=60, height=10, text_color='white').grid(column=0, row=1, columnspan=3)
+#customtkinter.CTkLabel(root, text="", fg_color="transparent", height=20).grid(column=0, row=2)
+
 
 ### ROW 0 ###
 #create/place the "Generate" button and set the command to our click handler
-button_generate = Button(root, text="Generate List", width=20, command=click_generate) # assign click_gerate as the click handler
-button_generate.grid(row=0,column=0)
+button_generate = customtkinter.CTkButton(root, text="Generate List", width=40, height=60, font=("Roboto", 20, "bold"), command=click_generate,
+                         fg_color="transparent", hover_color="grey") # assign click_gerate as the click handler
+button_generate.grid(row=3,column=0, columnspan=3, pady=(10, 10))  
 #create/place the abel to the left of the generate label (which displays the generated list)
-label_unsorted = Label(root,text="Unsorted List: ", width=20, anchor="w")
-label_unsorted.grid(row=0,column=1)
+label_unsorted = customtkinter.CTkLabel(root,text="Unsorted List:", text_color='white', width=20, font=("Roboto", 20, "bold"), anchor="w", fg_color="transparent")
+label_unsorted.grid(row=4,column=0, columnspan=3, pady=(50, 10))
 #create/place the label to show the generated list
-label_generated_list = Label(root, width=130, anchor="w") 
-label_generated_list.grid(row=0,column=2, padx=10, pady=10)
+label_generated_list = Label(root, width=80, height=5, anchor="w", background='#cfb095', font=("Roboto", 20, "bold")) 
+label_generated_list.grid(row=5,column=0, padx=10, pady=10,  columnspan=3)
 #create/place label to show generated "k"
-label_kth = Label(root,width = 10, anchor="w")
-label_kth.grid(row=0,column=3)
+label_kth = Label(root,width = 10, height=3, anchor="w", font=("Roboto", 15, "bold"))
+label_kth.grid(row=6,column=0, columnspan=3, pady=(10, 10))
 
 ### ROW 1 ###
 #create/place the generate button and set the command to our click handler
-button_graph = Button(root, text="Graph and Sort", width=20, command=click_graph) # assign click_graph as the click handler
-button_graph.grid(row=1,column=0)
+button_graph = customtkinter.CTkButton(root, text="Graph and Sort", width=40, height=60, font=("Roboto", 20, "bold"), command=click_graph, 
+                                       fg_color="transparent", hover_color="grey") # assign click_graph as the click handler
+button_graph.grid(row=7,column=0, columnspan=3, pady=(10, 10))
 #create/place the  label to the left of the "sorted_list" label (which displays the list after sorting)
-label_sorted = Label(root,text="Sorted List:   ", width=20, anchor="w")
-label_sorted.grid(row=1,column=1)
+label_sorted = customtkinter.CTkLabel(root,text="Sorted List:", text_color='white', width=20, font=("Roboto", 20, "bold"), anchor="w", fg_color="transparent")
+label_sorted.grid(row=8,column=0, columnspan=3,  pady=(50, 10))
 #create/place the Label to display the list after sorting
-label_sorted_list= Label(root,text="", width=130, anchor="w")
-label_sorted_list.grid(row=1,column=2,padx=10,pady=10)
+label_sorted_list= Label(root,text="", width=80, height=5, anchor="w", border='1', background='#cfb095', font=("Roboto", 20, "bold"))
+label_sorted_list.grid(row=9,column=0,padx=10,pady=10, columnspan=3)
 #create/place label to show generated "k"th value
-label_kth_value = Label(root,width = 10, anchor="w")
-label_kth_value.grid(row=1,column=3)
+label_kth_value = Label(root,width = 10, height=3, anchor="w",  font=("Roboto", 15, "bold"))
+label_kth_value.grid(row=10,column=0, columnspan=3, pady=(10, 50))
 
 
 def main():
@@ -152,8 +177,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
