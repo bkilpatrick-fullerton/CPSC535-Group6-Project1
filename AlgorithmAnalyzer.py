@@ -48,7 +48,7 @@ def click_graph():
         
         
         """TODO These algo function calls should probably be in a loop to reduce repeated code/ improve readability"""
-        # BUBBLE SORT
+                # BUBBLE SORT
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
         algos.bubble_sort(input_list) # pass in the unsorted_list
@@ -64,7 +64,7 @@ def click_graph():
         # QUICK SORT
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
-        algos.quick_sort(input_list) # pass in the unsorted_list
+        algos.quick_sort(input_list, 0, len(input_list) - 1) # pass in the unsorted_list
         graph_data["quick_sort"] = timer.end()
 
         # HEAP SORT
@@ -76,7 +76,7 @@ def click_graph():
         # COUNTING SORT
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
-        algos.counting_sort(input_list) # pass in the unsorted_list
+        algos.counting_sort(input_list, 1) # pass in the unsorted_list
         graph_data["counting_sort"] = timer.end()
 
         # RADIX SORT
@@ -88,7 +88,7 @@ def click_graph():
         # QUICK SELECT (don't run this one last)
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
-        kth_value = algos.quick_select(input_list,kth) # pass in the unsorted_list
+        kth_value = algos.quick_select(input_list,kth, 0, len(input_list) - 1) # pass in the unsorted_list
         graph_data["quick_select"] = timer.end()
 
         # BUCKET SORT
@@ -96,7 +96,6 @@ def click_graph():
         input_list = generated_list[:] # copy the unsorted_list
         algos.bucket_sort(input_list) # pass in the unsorted_list
         graph_data["bucket_sort"] = timer.end()
-
        
 
         #Display the sorted list in the main GUI
