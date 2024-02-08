@@ -51,7 +51,7 @@ def click_graph():
         
         
         """TODO These algo function calls should probably be in a loop to reduce repeated code/ improve readability"""
-                # BUBBLE SORT
+        # BUBBLE SORT
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
         algos.bubble_sort(input_list) # pass in the unsorted_list
@@ -67,7 +67,7 @@ def click_graph():
         # QUICK SORT
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
-        algos.quick_sort(input_list, 0, len(input_list) - 1) # pass in the unsorted_list
+        algos.quick_sort(input_list) # pass in the unsorted_list
         graph_data["quick_sort"] = timer.end()
 
         # HEAP SORT
@@ -79,7 +79,7 @@ def click_graph():
         # COUNTING SORT
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
-        algos.counting_sort(input_list, 1) # pass in the unsorted_list
+        algos.counting_sort(input_list) # pass in the unsorted_list
         graph_data["counting_sort"] = timer.end()
 
         # RADIX SORT
@@ -91,7 +91,7 @@ def click_graph():
         # QUICK SELECT (don't run this one last)
         timer.start()
         input_list = generated_list[:] # copy the unsorted_list
-        kth_value = algos.quick_select(input_list,kth, 0, len(input_list) - 1) # pass in the unsorted_list
+        kth_value = algos.quick_select(input_list,kth) # pass in the unsorted_list
         graph_data["quick_select"] = timer.end()
 
         # BUCKET SORT
@@ -99,6 +99,7 @@ def click_graph():
         input_list = generated_list[:] # copy the unsorted_list
         algos.bucket_sort(input_list) # pass in the unsorted_list
         graph_data["bucket_sort"] = timer.end()
+
        
 
         #Display the sorted list in the main GUI
@@ -149,7 +150,7 @@ button_generate.grid(row=3,column=0, columnspan=3, pady=(10, 10))
 label_unsorted = customtkinter.CTkLabel(root,text="Unsorted List:", text_color='white', width=20, font=("Roboto", 20, "bold"), anchor="w", fg_color="transparent")
 label_unsorted.grid(row=4,column=0, columnspan=3, pady=(50, 10))
 #create/place the label to show the generated list
-label_generated_list = Label(root, width=80, height=5, anchor="w", background='#cfb095', font=("Roboto", 20, "bold")) 
+label_generated_list = Label(root, width=80, height=5, anchor="center", background='#cfb095', font=("Roboto", 20, "bold"),wraplength=1200, padx=50) 
 label_generated_list.grid(row=5,column=0, padx=10, pady=10,  columnspan=3)
 #create/place label to show generated "k"
 label_kth = Label(root,width = 10, height=3, anchor="w", font=("Roboto", 15, "bold"))
@@ -164,7 +165,7 @@ button_graph.grid(row=7,column=0, columnspan=3, pady=(10, 10))
 label_sorted = customtkinter.CTkLabel(root,text="Sorted List:", text_color='white', width=20, font=("Roboto", 20, "bold"), anchor="w", fg_color="transparent")
 label_sorted.grid(row=8,column=0, columnspan=3,  pady=(50, 10))
 #create/place the Label to display the list after sorting
-label_sorted_list= Label(root,text="", width=80, height=5, anchor="w", border='1', background='#cfb095', font=("Roboto", 20, "bold"))
+label_sorted_list= Label(root,text="", width=80, height=5, anchor="center", border='1', background='#cfb095', font=("Roboto", 20, "bold"), wraplength=1200, padx=50)
 label_sorted_list.grid(row=9,column=0,padx=10,pady=10, columnspan=3)
 #create/place label to show generated "k"th value
 label_kth_value = Label(root,width = 10, height=3, anchor="w",  font=("Roboto", 15, "bold"))
